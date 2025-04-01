@@ -1,6 +1,6 @@
 # Lab 3 - Aegis Legal Advocates
 
-Group Members: Niza Khunga  
+Group Members: Niza Khunga & Faith Mayani
 Features:
 
 - Flexbox (navbar + home layout)
