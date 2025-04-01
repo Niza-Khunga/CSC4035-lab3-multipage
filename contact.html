@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Aegis Legal Advocates</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Aegis Legal Advocates</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-intro">
+        <h2>Contact Us</h2>
+        <p>Schedule a consultation or inquire about our services.</p>
+      </section>
+      <section class="trust-signals">
+        <h3>Our Team</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="images/lawyer-profile.jpg" alt="Attorney Niza Khunga" />
+            <p>
+              <strong>Niza Nicholas Khunga</strong><br />Corporate Law
+              Specialist
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <div class="form-header">
+          <h2>Get in Touch</h2>
+          <p>Complete the form below and we'll respond within 24 hours</p>
+        </div>
+
+        <form id="contact-form">
+          <!-- Your existing form fields -->
+          <button type="submit" class="submit-btn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 2L11 13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M22 2L15 22L11 13L2 9L22 2Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <form id="contact-form">
+        <!-- Name -->
+        <label for="name">Full Name*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="John Doe"
+        />
+
+        <!-- Email -->
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="john@example.com"
+        />
+
+        <!-- Phone -->
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(123) 456-7890"
+        />
+
+        <!-- Subject Dropdown -->
+        <label for="subject">Subject*</label>
+        <select id="subject" name="subject" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="corporate">Corporate Law</option>
+          <option value="family">Family Law</option>
+          <option value="criminal">Criminal Defense</option>
+          <option value="injury">Personal Injury</option>
+          <option value="other">Other</option>
+        </select>
+
+        <!-- Message -->
+        <label for="message">Message*</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          minlength="10"
+          placeholder="Briefly describe your legal needs..."
+        ></textarea>
+
+        <!-- Privacy Consent (Optional) -->
+        <div class="consent">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent"
+            >I consent to Aegis Legal Advocates contacting me about my
+            inquiry.</label
+          >
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <address>
+            123 Justice Avenue<br />
+            Legal District, Cityville 10001<br />
+            <a href="tel:+1234567890">(123) 456-7890</a><br />
+            <a href="mailto:info@aegislegal.com">info@aegislegal.com</a>
+          </address>
+        </div>
+
+        <div class="footer-hours">
+          <h3>Office Hours</h3>
+          <p>Monday-Friday: 8:30 AM - 6:00 PM</p>
+          <p>Emergency services available 24/7</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">📱</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <p class="copyright">
+            &copy; 1995-<span id="current-year">2025</span> Aegis Legal
+            Advocates. All rights reserved.
+          </p>
+          <p class="disclaimer">
+            This website is for informational purposes only and does not
+            constitute legal advice.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

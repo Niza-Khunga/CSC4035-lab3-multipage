@@ -1,0 +1,740 @@
+/* Updated Typography in style.css */
+:root {
+  /* ... (keep your existing variables) ... */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+/* Base Font Sizes - Increased for better readability */
+body {
+  font-family: var(--font-body);
+  font-size: 18px; /* Increased from typical 16px */
+  line-height: 1.7; /* More breathing room between lines */
+  color: var(--dark);
+}
+
+/* Heading Sizes - More pronounced hierarchy */
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.8rem; /* ≈45px */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem; /* ≈35px */
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.8rem; /* ≈29px */
+  line-height: 1.4;
+}
+
+/* Hero Section Text */
+.hero-content h1 {
+  font-size: 3.2rem; /* ≈51px */
+}
+
+.hero-content p {
+  font-size: 1.4rem; /* ≈22px */
+  margin-bottom: 2rem;
+}
+
+/* Card Text */
+.card h3 {
+  font-size: 1.5rem; /* ≈24px */
+}
+
+.card p {
+  font-size: 1.1rem; /* ≈18px */
+}
+
+/* Form Text */
+#contact-form label {
+  font-size: 1.1rem;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+  font-size: 1rem;
+}
+
+/* Navigation */
+nav a {
+  font-size: 1.1rem;
+}
+
+/* Footer Text */
+footer {
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
+/* Updated Footer Styles */
+footer {
+  background: var(--secondary); /* Warm brown */
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center; /* Center all text */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically if needed */
+  gap: 1.5rem;
+}
+
+.footer-legal {
+  width: 100%;
+}
+
+.copyright,
+.disclaimer {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Social Icons Centering */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Contact Info Centering */
+.footer-contact,
+.footer-hours {
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-contact,
+  .footer-hours,
+  .footer-social {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 1rem;
+  }
+
+  .footer-legal {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+/* Modern Law Firm Stylesheet */
+:root {
+  --primary: #1a3e72; /* Deep blue (trust) */
+  --secondary: #925611; /* Warm brown (updated from header) */
+  --accent: #d4af37; /* Gold (prestige) */
+  --light: #f8f9fa; /* Light gray */
+  --dark: #333; /* Text/UI dark */
+}
+
+/* Base Styles */
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/Nav - Updated to match secondary color */
+header {
+  background: var(--secondary); /* Now uses warm brown */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section - Centered Layout */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-image-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.03);
+}
+
+/* Remove the background from .hero and add to container */
+.hero {
+  position: relative;
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(26, 62, 114, 0.9), rgba(26, 62, 114, 0.95));
+  z-index: 1;
+}
+
+/* Buttons - Consistent accent color */
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--primary);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Services Grid - Improved card styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  display: block;
+  object-fit: contain;
+}
+/* Updated Services CTA Styles */
+.services-cta {
+  background: var(--primary); /* Deep blue background */
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center; /* Center all text */
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  gap: 1.5rem;
+}
+
+.cta-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.cta-container p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem; /* Center paragraph */
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center buttons */
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Button Styles */
+.button.primary-cta {
+  background: var(--accent);
+  color: var(--primary);
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.button.secondary-cta {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.button.primary-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button.secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button.primary-cta,
+  .button.secondary-cta {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+/* Updated Services CTA Styles */
+.services-cta {
+  background: var(--primary); /* Deep blue background */
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center; /* Center all text */
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  gap: 1.5rem;
+}
+
+.cta-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.cta-container p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem; /* Center paragraph */
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center buttons */
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Button Styles */
+.button.primary-cta {
+  background: var(--accent);
+  color: var(--primary);
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.button.secondary-cta {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.button.primary-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button.secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button.primary-cta,
+  .button.secondary-cta {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-container p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-container p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Contact Form - Enhanced visual hierarchy */
+#contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+/* Updated Contact Form Styles */
+#contact-form {
+  max-width: 700px; /* Slightly wider */
+  margin: 3rem auto;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 10px 30px rgba(26, 62, 114, 0.15); /* Deeper shadow with brand color tint */
+  border: 1px solid rgba(146, 86, 17, 0.2); /* Subtle border using secondary color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(26, 62, 114, 0.2);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9; /* Light background */
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(210, 175, 55, 0.3);
+  background-color: white;
+}
+
+#contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* Enhanced Submit Button */
+.submit-btn {
+  background: var(--accent);
+  color: var(--primary);
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.submit-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(26, 62, 114, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Checkbox Styling */
+.consent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.consent input[type="checkbox"] {
+  min-width: 20px;
+  min-height: 20px;
+  accent-color: var(--accent); /* Modern browsers */
+}
+
+/* Form Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.form-header h2 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #contact-form {
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact-form {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+}
+
+/* Team Section - Refined layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin: 0 auto 1rem;
+  transition: all 0.3s;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Animations (Lab Requirement) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+#contact-form {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive Images (Lab Requirement) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
